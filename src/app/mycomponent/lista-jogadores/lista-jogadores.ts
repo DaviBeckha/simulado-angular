@@ -16,6 +16,10 @@ export class ListaJogadoresComponent {
 
   filtroNome = '';
   filtroPosicao = '';
+  
+  
+
+
 
   get jogadoresFiltrados(): Jogador[] {
     return this.jogadores.filter(j =>
