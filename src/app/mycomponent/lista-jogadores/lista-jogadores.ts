@@ -16,20 +16,12 @@ export class ListaJogadoresComponent {
 
   filtroNome = '';
   filtroPosicao = '';
-  posiFiltro = [
-    {nome: 'ATA', selecionado: false},
-    {nome: 'MEI', selecionado: false},
-    {nome: 'ZAG', selecionado: false},
-    {nome: 'LAT', selecionado: false},
-    {nome: 'GOL', selecionado: false}  
-]
+ 
 
 
 
 
   get jogadoresFiltrados(): Jogador[] {
-    let lista = this.jogadores
-   
     return this.jogadores.filter(j =>
       j.nome.toLowerCase().includes(this.filtroNome.toLowerCase()) &&
       j.posicao.toLowerCase().includes(this.filtroPosicao.toLowerCase())
