@@ -13,10 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
 
-  protected posFiltros =[
-    {nome =}
-  ]
-
+ 
 
   jogadores = [
     new Jogador(1,'Adriano', 41, 10, 'ATA', 'adriano.jpg'),
