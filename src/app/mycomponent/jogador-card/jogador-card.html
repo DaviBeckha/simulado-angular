@@ -1,0 +1,11 @@
+<div class="card h-100">
+  <img [src]="jogador.foto" class="card-img-top" alt="{{ jogador.nome }}">
+  <div class="card-body text-center">
+    <h5 class="card-title">{{ jogador.nome }}</h5>
+    <p class="card-text text-muted">{{ jogador.posicao }}</p>
+    <p class="card-text text-muted">Número: {{ jogador.numero }}</p>
+    <p class="card-text text-muted">Idade: {{ jogador.idade }}</p>
+    <button class="btn btn-primary btn-sm" (click)="escalar.emit()">Escalar</button>
+  </div>
+</div>
+

@@ -1,0 +1,13 @@
+<div class="container mb-4">
+  <h4>Jogadores Escalados</h4>
+  <div *ngIf="escalados.length === 0" class="alert alert-secondary text-center">
+    Nenhum jogador escalado ainda.
+  </div>
+  <ul class="list-group" *ngIf="escalados.length > 0">
+    <li *ngFor="let j of escalados" class="list-group-item d-flex align-items-center">
+      <img [src]="j.foto" width="40" height="40" class="rounded me-2" alt="{{ j.nome }}">
+      <span>{{ j.nome }} - {{ j.posicao }}</span>
+    </li>
+  </ul>
+</div>
+

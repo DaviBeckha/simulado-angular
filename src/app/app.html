@@ -1,9 +1,7 @@
 <div class="container">
-  <img src="catjam.avif" alt="">
-  <img src="hackermans.avif" alt="">
-  <img src="4x.avif" alt="">
+  <app-navbar></app-navbar>
+
+<app-escalados [escalados]="escalados"></app-escalados>
+<app-lista-jogadores [jogadores]="jogadores" (escalar)="onEscalar($event)"></app-lista-jogadores>
+
 </div>
-
-
-
-<router-outlet />
